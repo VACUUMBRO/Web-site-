@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+      <h3>Comments</h3>
+      {% for comment in comments %}
+        <h2>
+            <a href="">
+                {{ comment.username }}
+            </a>
+        </h2>
+        <p> {{ comment.content }}</p>
+      {% endfor %}
+</body>
+</html>
